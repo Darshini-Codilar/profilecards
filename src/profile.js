@@ -1,19 +1,16 @@
 import React ,{useEffect,useState} from 'react';
-import './page1.css';
+import './profile.css';
 import Loader from './loader';
 
-
-export default function Page1 ({state}) {
+export default function Profile ({state}) {
     console.log(state);
     const [user,setUser] =  useState(null);
     var x=state;
-
 
     useEffect(() => { setTimeout(async() =>{
         const response = await fetch('https://reqres.in/api/users?page='+x);
         const data = await response.json();
         setUser (data.data);
-       
         console.log(x);
     
     },500)
@@ -23,7 +20,7 @@ export default function Page1 ({state}) {
       <>
           <div className="cards">
                
-  
+
   
           {
             user && user.map((el)=>{

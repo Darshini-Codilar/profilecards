@@ -1,15 +1,15 @@
 import './App.css';
 import { useState } from 'react';
-import Page1 from './page1';
-import Page2 from './page2';
+import Profile from './profile';
+import Pagination from './pagination';
 
 
 function App() {
   const [state,setstate]=useState(1);
   return (
     <div className="mainapp">
-      <Page1 state={state}/>
-      <Page2 setstate={setstate} state={state}/>
+      <Profile state={state}/>
+      <Pagination setstate={setstate} state={state}/>
       
       </div>
   );

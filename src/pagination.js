@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import pre from './left.svg';
 import nex from './right.svg';
-export default function Page2({ setstate,state }) {
+export default function Pagination({ setstate,state }) {
   
     const [page, setPage] = useState([]);
     
@@ -38,7 +38,6 @@ export default function Page2({ setstate,state }) {
 
     const changeContent = (evt) => {
         let val = evt.target.value;
-        // console.log(val);
         setstate(parseInt(val));
 
     }
@@ -51,7 +50,6 @@ export default function Page2({ setstate,state }) {
                 </button>
                 {page.map((id) =>
                     <button className='pagecount' key={id} value={id} onClick={changeContent} >{id}</button>
-                    // <button key={id} value={id} >{id}</button>
                 )}
                 <button className='btnr'onClick={next}>
                     <img src={nex}  alt='im' />

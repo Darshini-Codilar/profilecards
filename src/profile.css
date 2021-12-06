@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    
+    background-color: hsl(0, 0%, 0%);
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 150px;
+    margin-left: 300px;
+    margin-top: 80px;
+    width: 65%;
+    
+  }
+   
+  .cards .card {
+    background-color: rgb(195, 221, 223); 
+    height: 344px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .cards .avatar {
+    height: 140px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15%;
+    margin-bottom: 20%;
+  }
+  
+  .cards .avatar img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: solid 1px;
+  
+  }
+  
+  .text-name {
+    font-size: 18px;
+    color: #000;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .mid {
+    margin-top: 8%;
+    opacity: 0;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+  }
+  
+  .card:hover .mid {
+  
+    opacity: 1;
+    font-size: 14px;
+    font-weight: lighter;
+    overflow: hidden;
+  }
+  
+  .card:hover .avatar {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20%;
+  
+  }
+  
+  .card:hover img {
+    margin-left: 0;
+    margin-right: 0;
+    transition: 1s;
+    height: 140px;
+    border-radius: 5px;
+    
+  }
+  .Buttons {
+    text-align: center;
+  }
+  .btnl, .btnr {
+    background: transparent;
+  } 
+  /* for tab */
+  @media (min-width:768px) and (max-width:1024px) {
+    .cards {
+        
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 100px;
+
+    }
+  }
+
+    
+/* /for mobile/ */
+@media screen and (max-width:600px) {
+    .cards {
+        
+        
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 80px;
+
+    }
+
+   
+
+}

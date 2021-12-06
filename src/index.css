@@ -1,9 +1,6 @@
 body {
   font-family: tahoma;
-  height: 100vh;
-  background-image: url(/home/darshini/Desktop/dachi/cards/src/mountain.jpeg);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
+  /* background-image: url(/home/darshini/Desktop/dachi/cards/src/mountain.jpeg); */
+  background-color: black;
+  width: 100%;
 }
